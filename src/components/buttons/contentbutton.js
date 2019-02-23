@@ -8,7 +8,7 @@ class ContentButton extends Component {
         return (
             <div className={"content-button " + (this.props.toggle? "godown" : "")}>
                 <button className={"dropdown-button " + (this.props.toggle? "emphasis" : "")} onClick={this.props.onClick}>
-                    <img src={arrowImg} className="right-arrow" alt={`dropdown ${this.props.title}`}/>
+                    <img src={arrowImg} className={"right-arrow " + (this.props.toggle? "drop" : "")} alt={`dropdown ${this.props.title}`}/>
                     <h3>{this.props.title}&nbsp;</h3>
                 </button>
             </div>

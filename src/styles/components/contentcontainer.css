@@ -6,18 +6,29 @@
 
 .right-arrow {
     width: 1.2rem;
+    transition-duration: 1s;
+    margin-right: .5rem;
+}
+
+.dropdown-button:hover .right-arrow {
+    transform: rotate(90deg);
+}
+
+.drop {
+    transform: rotate(90deg);
 }
 
 .info-container {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .content-button {
     width: max-content;
     height: 1rem;
+    cursor: pointer;
 }
 
 .godown {
@@ -27,6 +38,7 @@
 .dropdown-button {
     display: flex;
     position: relative;
+    cursor: pointer;
 }
 
 .emphasis {
