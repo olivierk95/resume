@@ -54,8 +54,9 @@ class ContentContainer extends Component {
         <div className="info-right">
             <div className="info-container">
                 <ContentButton
-                onClick={this.toggleEducation}
-                title={"Education"} 
+                  onClick={this.toggleEducation}
+                  title={"Education"} 
+                  toggle={this.state.showEducation}
                 />
                 {this.state.showEducation ? <Education /> : ""}
             </div>
@@ -63,6 +64,7 @@ class ContentContainer extends Component {
                 <ContentButton
                     onClick={this.toggleWorkExperience}
                     title={"Work Experience"}
+                    toggle={this.state.showWorkExperience}
                 />
                 {this.state.showWorkExperience ? <WorkExperience /> : ""}
             </div>
@@ -70,6 +72,7 @@ class ContentContainer extends Component {
                 <ContentButton
                     onClick={this.togglePersonalExperience}
                     title={"Personal Experience"}
+                    toggle={this.state.showPersonalExperience}
                 />
                 {this.state.showPersonalExperience ? <PersonalExperience /> : ""}
             </div>

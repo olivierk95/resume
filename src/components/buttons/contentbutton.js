@@ -6,10 +6,12 @@ import arrowImg from "../../images/keyboard-right-arrow-button.svg";
 class ContentButton extends Component {
     render () {
         return (
-            <button className="dropdown-button" onClick={this.props.onClick}>
-                <img src={arrowImg} className="right-arrow" alt={`dropdown ${this.props.title}`}/>
-                <h3>{this.props.title}</h3>
-            </button>
+            <div className={"content-button " + (this.props.toggle? "godown" : "")}>
+                <button className={"dropdown-button " + (this.props.toggle? "emphasis" : "")} onClick={this.props.onClick}>
+                    <img src={arrowImg} className="right-arrow" alt={`dropdown ${this.props.title}`}/>
+                    <h3>{this.props.title}&nbsp;</h3>
+                </button>
+            </div>
         );
     }
 };
