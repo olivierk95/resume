@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Serif', serif;
+}
+
+body {
+	background: linear-gradient(to right, rgba(201,201,201,1) 0%, rgba(246,246,246,1) 50%, rgba(201,201,201,1) 100%);
+	height: 50rem;
+}
+
+h1 {
+	color: #161411;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+h2 {
+	color:#161411;
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+h3 {
+	color:#161411;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+h5 {
+	font-weight: 300;
+	color: #161411;
+}
+
+button {
+	background: none;
+	border: none;
+}
+
+/* FIRST PART - HEADER */
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1.2rem;
+}
+
+.typewriter h1 {
+	overflow: hidden;
+	white-space: nowrap;
+	animation: 
+		typing 2s steps(30, end),
+		blink-caret .6s step-end 7 forwards; 
+}
+
+.secondtypewriter .typewriter {
+	overflow: hidden;
+	white-space: nowrap;
+	animation: 
+		typing 1.5s 4s steps(22, end) forwards,
+		blink-caret .6s step-end 13;
+	opacity: 0;
+}
+
+.secondtypewriter {
+	display: flex;
+}
+
+.secondtypewriter span {
+	animation: lineThrough 10s 5s backwards;
+}
+
+.end {
+	overflow: hidden;
+	white-space: nowrap;
+	animation: 
+		typing .5s 10s steps(5, end) forwards,
+		blink-caret .6s step-end 13;
+	opacity: 0;
+}
+
+@keyframes typing {
+	from {width: 0} to {width: 100%}
+	0% {opacity: 1} 100% {opacity: 1}
+}
+
+@keyframes blink-caret {
+	from, to {border-right: .15rem solid #00B6B2} 
+	50% {border-color: transparent}
+	100% {border-right: none}
+}
+
+@keyframes lineThrough {
+	0% {background-color: #00B6B2; text-decoration: none;}
+	100% {text-decoration: line-through; background-color: #00B6B2;}
+}
+
+
+/* SECOND PART - CONTENT */
+
+.content {
+	display: flex;
+}
+
+	/* LEFT SIDE */
+	.info-left {
+		display: flex;
+		flex-direction: column;
+		width: 34vw;
+		margin-left: 3rem;
+		align-items: flex-end;
+	}
+
+	.title {
+		border-top: 1rem solid #DE3845;
+		width: max-content;
+	}
+
+	.title h1 {
+		color: #161411;
+		font-size: 1.1rem;
+		font-style: italic;
+		position: relative;
+		top: -.9rem;
+	}
+
+	.introduction {
+		margin-right: 2rem;
+		text-align: justify;
+	}
+
+	/* RIGHT SIDE */
+
+	.info-right {
+		width: 34vw;
+		margin-right: 3rem;
+		padding-top: 8rem;
+	}
+
+	.right-arrow {
+		width: 1.2rem;
+	}
+
+	.info-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.dropdown-button {
+		display: flex;
+	}
+
+	/* PROFILE PICTURE */
+
+	.profile-picture {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		width: 32vw;
+		height: 30rem;
+	}
+
+	.profile-picture img {
+		height: auto;
+		max-width: 18rem;
+	}
+
+	#hair {
+		position: absolute;
+		z-index: 5;
+		transform: rotate(-15deg) translateX(-.9rem);
+		transition-duration: 1s;
+		transform-style: preserve-3d;
+	}
+
+	#hair:hover {
+		transform: rotate(0deg) translateX(0rem) translateY(1.2rem);
+		transform-origin: 10% 30%;
+	}
+
+	#eyes {
+		position: absolute;
+		top: 7rem;
+		z-index: 4;
+		transform-style: preserve-3d;
+		animation: floatingEyes 5s 5s ease-in-out infinite alternate backwards;
+	}
+
+	@keyframes floatingEyes {
+		50% {top: 7rem;}
+		100% {top: 8.5rem;}
+	}
+
+	#nose {
+		position: absolute;
+		top: 13rem;
+		z-index: 3;
+		transform: rotate(-5deg);
+		transition-duration: 1s;
+		transform-style: preserve-3d;
+		animation: floatingNose 5s 5s ease-in-out infinite alternate backwards;
+	}
+
+	#nose:hover {
+		transform: rotate(0deg) translateX(-.1rem) translateY(-1rem);
+		transform-origin: 10% 30%;
+	}
+
+	@keyframes floatingNose {
+		50% {top: 13rem;}
+		100% {top: 16rem;}
+	}
+
+	#mouth {
+		position: absolute;
+		top: 19.5rem;
+		z-index: 2;
+		transform: rotate(7deg);
+		transition-duration: 1s;
+		transform-style: preserve-3d;
+		animation: floatingMouth 5s 5s ease-in-out infinite alternate backwards;
+	}
+
+	#mouth:hover {
+		transform: rotate(-5deg) translateX(.4rem) translateY(-.9rem);
+		transform-origin: 10% 30%;
+	}
+
+	@keyframes floatingMouth {
+		50% {top: 19.5rem;}
+		100% {top: 24rem;}
+	}
+
+	#shadow {
+		position: absolute;
+		top: 29rem;
+		z-index: 1;
+		animation: shadowing 5s 5s ease-in-out infinite alternate backwards;
+		max-width: 16rem;
+	}
+
+	@keyframes shadowing {
+		50% {max-width: 16rem;}
+		100% {max-width: 20rem;}
+	}
+
+/* LAST PART - FOOTER */
