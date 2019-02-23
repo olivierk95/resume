@@ -6,6 +6,9 @@ import WorkExperience from "./content/workexperience";
 import PersonalExperience from "./content/personalexperience";
 import ContentButton from "./buttons/contentbutton";
 
+// import style
+import "../styles/components/contentcontainer.css"
+
 class ContentContainer extends Component {
   constructor(props) {
     super(props)

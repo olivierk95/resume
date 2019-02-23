@@ -1,0 +1,25 @@
+.info-left {
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+    margin-left: 3rem;
+    align-items: flex-end;
+}
+
+.title {
+    border-top: 1rem solid #DE3845;
+    width: max-content;
+}
+
+.title h1 {
+    color: #161411;
+    font-size: 1.1rem;
+    font-style: italic;
+    position: relative;
+    top: -.9rem;
+}
+
+.introduction {
+    margin-right: 2rem;
+    text-align: justify;
+}

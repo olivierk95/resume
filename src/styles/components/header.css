@@ -1,0 +1,56 @@
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1.2rem;
+}
+
+.typewriter h1 {
+	overflow: hidden;
+	white-space: nowrap;
+	animation: 
+		typing 2s steps(30, end),
+		blink-caret .6s step-end 7 forwards; 
+}
+
+.secondtypewriter .typewriter {
+	overflow: hidden;
+	white-space: nowrap;
+	animation: 
+		typing 1.5s 4s steps(22, end) forwards,
+		blink-caret .6s step-end 13;
+	opacity: 0;
+}
+
+.secondtypewriter {
+	display: flex;
+}
+
+.secondtypewriter span {
+	animation: lineThrough 10s 5s backwards;
+}
+
+.end {
+	overflow: hidden;
+	white-space: nowrap;
+	animation: 
+		typing .5s 10s steps(5, end) forwards,
+		blink-caret .6s step-end 13;
+	opacity: 0;
+}
+
+@keyframes typing {
+	from {width: 0} to {width: 100%}
+	0% {opacity: 1} 100% {opacity: 1}
+}
+
+@keyframes blink-caret {
+	from, to {border-right: .15rem solid #00B6B2} 
+	50% {border-color: transparent}
+	100% {border-right: none}
+}
+
+@keyframes lineThrough {
+	0% {background-color: #00B6B2; text-decoration: none;}
+	100% {text-decoration: line-through; background-color: #00B6B2;}
+}
