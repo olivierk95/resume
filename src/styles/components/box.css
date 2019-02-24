@@ -34,9 +34,31 @@
 .box-download {
     top: 3rem;
     right: 3rem;
+    cursor: pointer;
+}
+
+.box-download a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.box-download:hover {
+    background-color: #DE3845;
 }
 
 .download-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.download-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: .3rem;
+}
+
+.resume-pdf {
+    font-size: .7rem;
 }

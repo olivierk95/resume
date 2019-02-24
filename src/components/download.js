@@ -14,7 +14,11 @@ export default class Download extends Component {
         return (
             <div className="box-download box">
                 <a href={resume} download="resume.jpg">
-                    <img href={downloadButton} className="download-icon" /><h3>{"Download in pdf"}</h3>
+                    <img src={downloadButton} className="download-icon" />
+                    <div className="download-text">
+                        <h4>{"Download"}</h4>
+                        <p className="resume-pdf">{"my resume in pdf"}</p>
+                    </div>
                 </a>
             </div>
         );
