@@ -1,41 +1,39 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Education = () => (
-    <div className="dropdown-content">
-        <p>Bonjour</p>
-    </div>
-);
+// import components
+import EducationContainer from "./contentcontainer/educationcontainer";
 
-export default Education
+export default class Education extends Component {
+    render () {
+        return (
+            <div className="dropped-content">
 
-{/* <div class="leftColumn">
-    <div class="textBox">
-        <p class="text1"><b>Full-stack coding training</b></p>
-        <p class="text2">BeCode</p> 
-        <p class="text3">Liège, Belgium</p>
-        <p class="text4">2018 – Now</p>
-    </div>
+                <EducationContainer 
+                    title="Web developer training"
+                    institution="BeCode"
+                    place="Liège, Belgium"
+                    period="2018 – Now"
+                />
+                <EducationContainer 
+                    title="Master in Marketing and Strategic Intelligence"
+                    institution="University of Liège - HEC"
+                    place="Liège, Belgium"
+                    period="2016 – 2018"
+                />
+                <EducationContainer 
+                    title="Bachelor in Economics and Management"
+                    institution="University of Liège - HEC"
+                    place="Liège, Belgium"
+                    period="2013 – 2016"
+                />
+                <EducationContainer 
+                    title="Secondary Studies"
+                    institution="Collège Royal Marie-Thérèse"
+                    place="Herve, Belgium"
+                    period="2007 – 2013"
+                />
 
-    <div class="textBox">
-        <p class="text1"><b>Master's in Marketing and Strategic Intelligence</b></p>
-        <p class="text2">University of Liège - HEC</p> 
-        <p class="text3">Liège, Belgium</p>
-        <p class="text4">2016 – 2018</p>
-    </div>
-</div>
-
-<div class="rightColumn">
-    <div class="textBox">
-        <p class="text1"><b>Bachelor's in Economics and Management</b></p>
-        <p class="text2">University of Liège - HEC</p>
-        <p class="text3">Liège, Belgium</p>
-        <p class="text4">2013 – 2016</p>
-    </div>
-
-    <div class="textBox">
-        <p class="text1"><b>Secondary Studies</b></p>
-        <p class="text2">Collège Royal Marie-Thérèse</p>
-        <p class="text3">Herve, Belgium</p>
-        <p class="text4">2007 – 2013</p>
-    </div>
-</div> */}
+            </div>
+        );
+    };
+}

@@ -44,3 +44,17 @@
 .emphasis {
     bottom: .9rem;
 }
+
+.dropped-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* animation of the rectangle */
+.list-item {
+    transition-duration: .6s;
+}
+
+.wrapper:hover .list-item {
+    transform: rotate(180deg);
+}
