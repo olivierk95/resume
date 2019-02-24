@@ -6,6 +6,8 @@ import Header from "../components/header";
 import ProfilePicture from "../components/profilepicture";
 import ContentContainer from "../components/contentcontainer";
 import PresentationContainer from "../components/presentationcontainer";
+import Contact from "../components/contact";
+import Download from "../components/download";
 
 // import styles
 import "../styles/main.scss";
@@ -18,6 +20,8 @@ class IndexPage extends Component {
         <body>
           <Header />
 
+          <Download />
+
           <div className="content">
             
             <PresentationContainer />
@@ -27,9 +31,9 @@ class IndexPage extends Component {
             <ContentContainer />
               
           </div>
-          {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-            <Image />
-          </div> */}
+
+            <Contact />
+
         </body>
       </>
     );

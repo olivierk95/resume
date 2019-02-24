@@ -1,0 +1,42 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border: .1rem solid #161411;
+    padding: .5rem;
+}
+
+
+/* CONTACT */
+.box-contact {
+    bottom: 3rem;
+    left: 3rem;
+}
+
+.linkedLogo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 1rem 0 1rem;
+    fill: #161411;
+}
+
+.linkedLogo:hover {
+    fill: #00B6B2;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+/* DOWNLOAD */
+.box-download {
+    top: 3rem;
+    right: 3rem;
+}
+
+.download-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
