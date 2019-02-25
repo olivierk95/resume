@@ -17,8 +17,11 @@ const PresentationContainer = () => (
                 marketer (with Master!), flexible and eager to learn from others.
             </h5>
             <br />
-            <blockquote>"Be the change you to see in the world."</blockquote>
-            <cite>- Gandhi </cite>
+           
+        </div>
+        <div className="quotation">
+                <blockquote>"Be the change you to see in the world."</blockquote>
+                <cite>- Gandhi </cite>
         </div>
     </div>
 );
