@@ -31,6 +31,10 @@
     cursor: pointer;
 }
 
+.content-button:hover {
+    background-color: #00B6B2;
+}
+
 .godown {
     background-color: #00B6B2;
 }
