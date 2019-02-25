@@ -27,23 +27,20 @@ const bodylines = {
 const company = {
     fontStyle: "italic",
     fontSize: ".9rem",
+    color: "#23619D",
 };
 
 const list = {
     marginLeft: "1.4rem",
 }
 
-const taskList = {
-    fontSize: ".75rem",
-    color: "#161411",
-    listStyle: "square",
-}
+
 
 export default class WorkExperienceContainer extends Component {
     render () {
         const listEachTask = (
             this.props.tasks.map( task => {
-                return <li className="task" style={taskList}>{task}</li>;
+                return <li>{task}</li>;
             })
         );
 
