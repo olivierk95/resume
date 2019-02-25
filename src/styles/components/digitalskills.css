@@ -1,0 +1,17 @@
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.digital-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .4rem .6rem .1rem .6rem;
+}
+
+.digital-logo {
+    max-width: 2rem;
+    max-height: 2rem;
+}

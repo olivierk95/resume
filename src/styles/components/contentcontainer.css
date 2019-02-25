@@ -25,6 +25,13 @@
     margin-bottom: 2rem;
 }
 
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
 .content-button {
     width: max-content;
     height: 1rem;

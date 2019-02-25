@@ -15,9 +15,10 @@ const PresentationContainer = () => (
                 <b>digitality</b>, always optimist, nature and diversity lover,
                 change-enthusiast, backpacker, dedicated and motivated volunteer,
                 marketer (with Master!), flexible and eager to learn from others.
-                I aimed at improving the world we are living in by putting my
-                skills at the service of projects that make sense to me.
             </h5>
+            <br />
+            <blockquote>"Be the change you to see in the world."</blockquote>
+            <cite>- Gandhi </cite>
         </div>
     </div>
 );

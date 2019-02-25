@@ -4,6 +4,8 @@ import React, { Component } from "react";
 import Education from "./content/education";
 import WorkExperience from "./content/workexperience";
 import PersonalExperience from "./content/personalexperience";
+import DigitalSkills from "./content/digitalskills";
+import Interests from "./content/interests";
 import ContentButton from "./buttons/contentbutton";
 
 // import style
@@ -16,10 +18,15 @@ class ContentContainer extends Component {
       showEducation: false,
       showWorkExperience: false,
       showPersonalExperience: false,
+      showDigitalSkills: false,
+      showInterests: false,
     };
     this.toggleEducation = this.toggleEducation.bind(this);
     this.toggleWorkExperience = this.toggleWorkExperience.bind(this);
     this.togglePersonalExperience = this.togglePersonalExperience.bind(this);
+    this.toggleDigitalSkills = this.toggleDigitalSkills.bind(this);
+    this.toggleInterests = this.toggleInterests.bind(this);
+
   }
 
   toggleEducation = () => {
@@ -28,6 +35,8 @@ class ContentContainer extends Component {
       showEducation: !showEducation,
       showWorkExperience: false,
       showPersonalExperience: false,
+      showDigitalSkills: false,
+      showInterests: false,
     })
   }
 
@@ -37,6 +46,8 @@ class ContentContainer extends Component {
       showEducation: false,
       showWorkExperience: !showWorkExperience,
       showPersonalExperience: false,
+      showDigitalSkills: false,
+      showInterests: false,
     });
   }
 
@@ -46,6 +57,30 @@ class ContentContainer extends Component {
       showEducation: false,
       showWorkExperience: false,
       showPersonalExperience: !showPersonalExperience,
+      showDigitalSkills: false,
+      showInterests: false,
+    });
+  }
+
+  toggleDigitalSkills = () => {
+    const { showDigitalSkills } = this.state;
+    this.setState({
+      showEducation: false,
+      showWorkExperience: false,
+      showPersonalExperience: false, 
+      showDigitalSkills: !showDigitalSkills,
+      showInterests: false,
+    });
+  }
+
+  toggleInterests = () => {
+    const { showInterests } = this.state;
+    this.setState({
+      showEducation: false,
+      showWorkExperience: false,
+      showPersonalExperience: false,
+      showDigitalSkills: false,
+      showInterests: !showInterests,
     });
   }
 
@@ -75,6 +110,22 @@ class ContentContainer extends Component {
                     toggle={this.state.showPersonalExperience}
                 />
                 {this.state.showPersonalExperience ? <PersonalExperience /> : ""}
+            </div>
+            <div className="skills-container">
+                <ContentButton
+                    onClick={this.toggleDigitalSkills}
+                    title={"Digital Skills"}
+                    toggle={this.state.showDigitalSkills}
+                />
+                {this.state.showDigitalSkills ? <DigitalSkills /> : ""}
+            </div>
+            <div className="info-container">
+                <ContentButton
+                    onClick={this.toggleInterests}
+                    title={"Interests"}
+                    toggle={this.state.showInterests}
+                />
+                {this.state.showInterests ? <Interests /> : ""}
             </div>
         </div>
     )
