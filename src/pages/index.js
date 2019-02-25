@@ -9,15 +9,26 @@ import PresentationContainer from "../components/presentationcontainer";
 import Contact from "../components/contact";
 import Download from "../components/download";
 
+// background effect
+import Particles from "react-particles-js";
+import parameters from "../../particlesjs-config.json";
+
 // import styles
 import "../styles/main.scss";
 
+
+const animation = {
+    position: "fixed",
+}
 class IndexPage extends Component {
   render () {
     return (
       <>
         <SEO title="Resume" keywords={[`resume`, `gatsby`, `react`]} />
         <body>
+
+          <Particles params={parameters} style={animation} />
+
           <Header />
 
           <Download />
@@ -32,7 +43,7 @@ class IndexPage extends Component {
               
           </div>
 
-            <Contact />
+          <Contact />
 
         </body>
       </>
