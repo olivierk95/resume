@@ -4,7 +4,7 @@ import React from "react";
 import "../styles/components/presentationcontainer.css";
 
 const PresentationContainer = () => (
-    <div className="info-left">
+    <div className="info-left appear-slowly">
         <div className="title">
             <h1>&nbsp;Junior Developer - Front end & Back end &nbsp;</h1>
         </div>
@@ -20,7 +20,7 @@ const PresentationContainer = () => (
            
         </div>
         <div className="quotation">
-                <blockquote>"Be the change you to see in the world."</blockquote>
+                <blockquote>"Be the change you want to see in the world."</blockquote>
                 <cite>- Gandhi </cite>
         </div>
     </div>

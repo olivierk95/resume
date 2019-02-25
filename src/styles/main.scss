@@ -62,3 +62,13 @@ li {
 .content {
 	display: flex;
 }
+
+.appear-slowly {
+	opacity: 0;
+	animation: appearSlowly 5s 10s ease-in-out forwards;
+}
+
+@keyframes appearSlowly {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}

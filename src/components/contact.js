@@ -11,7 +11,7 @@ import "../styles/components/box.css";
 export default class Contact extends Component {
     render () {
         return (
-            <div className="box-contact box">
+            <div className="box-contact box appear-slowly">
                 
                 <p className="infos"><b>{"Mail:"}</b>{" keutgensolivier@gmail.com"}</p>
                 <p className="infos"><b>{"Phone:"}</b>{" +32-471-831-087"}</p>

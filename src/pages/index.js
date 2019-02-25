@@ -19,6 +19,7 @@ import "../styles/main.scss";
 
 const animation = {
     position: "fixed",
+    zIndex: "0",
 }
 class IndexPage extends Component {
   render () {

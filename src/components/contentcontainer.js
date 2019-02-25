@@ -86,7 +86,7 @@ class ContentContainer extends Component {
 
   render() {
     return (
-        <div className="info-right">
+        <div className="info-right appear-slowly">
             <div className="info-container">
                 <ContentButton
                   onClick={this.toggleEducation}

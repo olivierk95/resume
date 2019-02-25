@@ -59,6 +59,7 @@
 .dropped-content {
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 /* animation of the rectangle */

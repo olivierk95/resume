@@ -12,7 +12,7 @@ import "../styles/components/box.css";
 export default class Download extends Component {
     render() {
         return (
-            <div className="box-download box">
+            <div className="box-download box appear-slowly">
                 <a href={resume} download="resume.jpg">
                     <img src={downloadButton} className="download-icon" />
                     <div className="download-text">
