@@ -9,16 +9,16 @@ header {
 	overflow: hidden;
 	white-space: nowrap;
 	animation: 
-		typing 2s steps(30, end),
-		blink-caret .6s step-end 7 forwards; 
+		typing 1s steps(30, end),
+		blink-caret .2s step-end 7 forwards; 
 }
 
 .secondtypewriter .typewriter {
 	overflow: hidden;
 	white-space: nowrap;
 	animation: 
-		typing 1.5s 4s steps(22, end) forwards,
-		blink-caret .6s step-end 13;
+		typing .5s 2s steps(22, end) forwards,
+		blink-caret .2s step-end 13;
 	opacity: 0;
 }
 
@@ -27,15 +27,15 @@ header {
 }
 
 .secondtypewriter span {
-	animation: lineThrough 10s 5s backwards;
+	animation: lineThrough 5s 3s backwards;
 }
 
 .end {
 	overflow: hidden;
 	white-space: nowrap;
 	animation: 
-		typing .5s 10s steps(5, end) forwards,
-		blink-caret .6s step-end 13;
+		typing .3s 5s steps(5, end) forwards,
+		blink-caret .2s step-end 13;
 	opacity: 0;
 }
 
