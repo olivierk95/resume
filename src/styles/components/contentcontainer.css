@@ -65,8 +65,15 @@
 /* animation of the rectangle */
 .list-item {
     transition-duration: .6s;
+    width: 1rem;
+    height: 1rem;
+    fill: #161411;
 }
 
 .wrapper:hover .list-item {
     transform: rotate(180deg);
+}
+
+rect {
+    fill: #161411;
 }
