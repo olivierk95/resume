@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // import doc
-import resume from "../documents/resume.jpg";
+import resume from "../documents/olivier_keutgens_resume.jpg";
 
 // import img
 import downloadButton from "../images/download-button.svg";
