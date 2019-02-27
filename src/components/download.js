@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // import doc
-import resume from "../documents/olivier_keutgens_resume.jpg";
+import resume from "../documents/olivier_keutgens_resume.pdf";
 
 // import img
 import downloadButton from "../images/download-button.svg";
@@ -13,7 +13,7 @@ export default class Download extends Component {
     render() {
         return (
             <div className="box-download box appear-slowly">
-                <a href={resume} download="resume.jpg">
+                <a href={resume} download="olivier_keutgens_resume.pdf">
                     <img src={downloadButton} className="download-icon" />
                     <div className="download-text">
                         <h4>{"Download"}</h4>
