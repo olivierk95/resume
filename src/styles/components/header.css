@@ -16,6 +16,7 @@ header {
 .secondtypewriter .typewriter {
 	overflow: hidden;
 	white-space: nowrap;
+	padding-right: .3rem;
 	animation: 
 		typing .5s 2s steps(22, end) forwards,
 		blink-caret .2s step-end 13;
@@ -31,8 +32,6 @@ header {
 }
 
 .end {
-	overflow: hidden;
-	white-space: nowrap;
 	animation: 
 		typing .3s 5s steps(5, end) forwards,
 		blink-caret .2s step-end 13;
