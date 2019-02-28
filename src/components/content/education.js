@@ -9,7 +9,7 @@ export default class Education extends Component {
             <div className="dropped-content">
 
                 <EducationContainer 
-                    title="Web developer training"
+                    title="Full-time Web Development training"
                     institution="BeCode"
                     place="Liège, Belgium"
                     period="2018 – Now"

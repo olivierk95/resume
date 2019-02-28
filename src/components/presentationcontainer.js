@@ -13,8 +13,12 @@ const PresentationContainer = () => (
             <h5>
                 Passionate about <b>entrepreneurship</b>, <b>creativity</b> and{" "}
                 <b>digitality</b>, always optimist, nature and diversity lover,
-                change-enthusiast, backpacker, dedicated and motivated volunteer,
+                change-enthusiast, dedicated and motivated volunteer,
                 marketer (with Master!), flexible and eager to learn from others.
+            </h5>
+            <br />
+            <h5>
+                I am currently <b>looking for an internship</b> of 2-3 months (beginning of May) where I would improve my coding skills and where my creativity would be challenged.
             </h5>
             <br />
            

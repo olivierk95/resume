@@ -15,7 +15,7 @@ export default class WorkExperience extends Component {
                     period="Feb-Apr 2018"
                     tasks={[
                         "Participated at events and fairs.",
-                        "Met B2B and B2C customers to sale the products.",
+                        "Met B2B and B2C customers to sell the products.",
                         "Designed visuals for online communication and products marketing.",
                     ]}
                 />
@@ -26,7 +26,7 @@ export default class WorkExperience extends Component {
                     period="Jan 2018"
                     tasks={[
                         "Imagined a new communication strategy.",
-                        "Created visuals for social medias and web presence.",
+                        "Created visuals for social media and web presence.",
                     ]}
                 />
                 <WorkExperienceContainer 
