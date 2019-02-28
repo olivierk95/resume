@@ -10,7 +10,7 @@ const Header = () => (
     </div>
     <div className="secondtypewriter">
       <h2 className="typewriter">
-        ... and this my <span>resume.</span>
+        ... and this is my <span>resume.</span>
       </h2>
       <h2 className="end">&nbsp;head.</h2>
     </div>
