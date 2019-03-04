@@ -1,0 +1,105 @@
+// Tablette
+@media screen and (max-width: 1024px) {
+
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: .8rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+    
+    h4 {
+        font-size: .7rem;
+    }
+    
+    h5 {
+        font-size: .7rem;
+    }
+    
+    p {
+        font-size: .6rem;
+    }
+    
+    li {
+        font-size: .65rem;
+        padding-top: .1rem;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .appear-slowly {
+        opacity: 1;
+        animation: none;
+    }
+
+	.content {
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content h1 {
+        font-size: .9rem
+    }
+        
+    .info-left {
+        width: 100%;
+        margin: 0;
+    }
+
+    .quotation {
+        font-size: .7rem;
+    }
+
+    .profile-picture {
+        width: 100%;
+        margin-top: 3rem;
+        height: 35rem;
+    }
+
+    .profile-picture img {
+        max-width: 15rem;
+    }
+
+    .info-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-button {
+        height: .8rem;
+    }
+
+    .emphasis {
+        bottom: .7rem;
+    }
+
+    .box {
+        position: static;
+        width: max-content;
+        margin: 1rem auto;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    .content h1 {
+        font-size: .7rem;
+    }
+}

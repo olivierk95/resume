@@ -23,6 +23,7 @@
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    z-index: 10;
 }
 
 .skills-container {
@@ -59,7 +60,6 @@
 .dropped-content {
     display: flex;
     flex-direction: column;
-    z-index: 1;
 }
 
 /* animation of the rectangle */

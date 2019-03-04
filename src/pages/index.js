@@ -15,11 +15,14 @@ import parameters from "../../particlesjs-config.json";
 
 // import styles
 import "../styles/main.scss";
+import "../styles/mediaqueries.scss";
 
 
 const animation = {
     position: "fixed",
     zIndex: "0",
+    top: "0",
+    left: "0",
 }
 class IndexPage extends Component {
   render () {
@@ -32,8 +35,6 @@ class IndexPage extends Component {
 
           <Header />
 
-          <Download />
-
           <div className="content">
             
             <PresentationContainer />
@@ -43,6 +44,8 @@ class IndexPage extends Component {
             <ContentContainer />
               
           </div>
+
+          <Download />
 
           <Contact />
 
