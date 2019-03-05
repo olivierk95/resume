@@ -4,6 +4,7 @@
     position: fixed;
     border: .1rem solid #161411;
     padding: .5rem;
+    z-index: 1;
 }
 
 
