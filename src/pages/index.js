@@ -20,7 +20,7 @@ import "../styles/mediaqueries.scss";
 
 
 const animation = {
-    position: "absolute",
+    position: "fixed",
     zIndex: "0",
     top: "0",
     left: "0",
@@ -31,6 +31,8 @@ class IndexPage extends Component {
       <>
         <SEO title="Resume" keywords={[`resume`, `gatsby`, `react`]} />
         <body>
+
+          <Particles params={parameters} style={animation} />
 
           <Header />
 
@@ -74,8 +76,6 @@ class IndexPage extends Component {
           <Download />
 
           <Contact />
-
-          <Particles params={parameters} style={animation} />
 
         </body>
       </>
