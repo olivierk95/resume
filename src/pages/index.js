@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MediaQuery from 'react-responsive';
 
 // import components
 import SEO from "../components/seo";
@@ -35,15 +36,42 @@ class IndexPage extends Component {
 
           <Header />
 
-          <div className="content">
-            
-            <PresentationContainer />
+          <MediaQuery query="(min-device-width:0px) and (max-device-width: 680px)">
+            <div className="content">
 
-            <ProfilePicture />
+              <PresentationContainer />
 
-            <ContentContainer />
+              <ProfilePicture />
+
+              <ContentContainer />
+
+            </div>            
+          </MediaQuery>
+
+          <MediaQuery query="(min-device-width:1025px)">
+            <div className="content">
+
+              <PresentationContainer />
+
+              <ProfilePicture />
+
+              <ContentContainer />
               
-          </div>
+            </div>    
+              
+          </MediaQuery>
+
+          <MediaQuery className="content" query="(min-device-width: 681px) and (max-device-width: 1024px)">
+            <div className="content">
+              <ProfilePicture />
+
+              <div>
+                <PresentationContainer />
+
+                <ContentContainer />
+              </div>
+            </div>       
+          </MediaQuery>
 
           <Download />
 

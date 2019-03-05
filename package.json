@@ -20,7 +20,8 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
-    "react-particles-js": "^2.4.2"
+    "react-particles-js": "^2.4.2",
+    "react-responsive": "^6.1.1"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
@@ -36,7 +37,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"", 
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {

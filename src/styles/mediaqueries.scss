@@ -1,10 +1,53 @@
 // Tablette
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 681px) {
 
+    body {
+        padding: 1rem;
+        height: fit-content;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+	.content {
+		display: flex;
+        width: 100%
+    }
+        
+    .info-left {
+        width: 48vw;
+        margin: 0;
+    }
+
+    .profile-picture {
+        width: 48vw;
+        margin-top: 3rem;
+        height: 35rem;
+    }
+
+    .profile-picture img {
+        max-width: 16rem;
+    }
+
+    .info-right {
+        width: 48vw;
+        margin: 0;
+    }
+
+    .quotation {
+        font-size: .8rem;
+    }
+
+    .box {
+        position: static;
+        width: max-content;
+        margin: 1rem;
+    }
 }
 
 // Mobile
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
     body {
         padding: 1rem;
