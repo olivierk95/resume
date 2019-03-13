@@ -73,9 +73,11 @@ class IndexPage extends Component {
             </div>       
           </MediaQuery>
 
-          <Download />
+          <div className="actions-box">
+            <Download />
 
-          <Contact />
+            <Contact />
+          </div>
 
         </body>
       </>
